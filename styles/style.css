@@ -62,7 +62,7 @@ header #volume-range-container {
   bottom: 50px;
   right: 120px;
   background-color: rgba(40, 40, 40, 0.5);
-  padding:1rem;
+  padding: 1rem;
   border-radius: 5px;
   #shortcuts-title {
     text-align: center;
@@ -70,21 +70,84 @@ header #volume-range-container {
     color: aliceblue;
     margin: 20px 0;
   }
-  #shortcuts-list{
+  #shortcuts-list {
     list-style: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
-  .shortcuts{
-    color:aliceblue;
-    margin-bottom: .75rem;
-
+  .shortcuts {
+    color: aliceblue;
+    margin-bottom: 0.75rem;
   }
-  .shortcuts span{
-    float:right;
-    background-color: rgba(100,100,100,0.8);  
-    padding:2px 5px;
+  .shortcuts span {
+    float: right;
+    background-color: rgba(100, 100, 100, 0.8);
+    padding: 2px 5px;
     border-radius: 5px;
+  }
+}
+#drumstick-container {
+  /* border:1px solid blue; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
 
+  .drumsticks {
+    /* position: absolute; */
+    /* border: 1px solid green; */
+    display: inline-block;
+    background-image: url(../images/drum-stick.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 150px;
+    margin-right: 10px;
+  }
+  /**Left Hand */
+  .drumstick-default-right {
+    left: 40%;
+    top: 40%;
+  }
+  .drumstick-hihat {
+    left: 25%;
+    top: 50%;
+    transform: scale(1.4) rotateZ(-25deg);
+  }
+  .drumstick-snare {
+    left: 30%;
+    top: 50%;
+    transform: scale(1.4) rotateZ(-20deg);
+  }
+  .drumstick-crash {
+    left: 30%;
+    top: 30%;
+    transform: scale(1.4) rotateZ(0deg);
+  }
+  .drumstick-high-tom {
+    left: 40%;
+    top: 30%;
+    transform: scale(1.4) rotateZ(0deg);
+  }
+  /**Right Hand */
+  .drumstick-default-left {
+    right: 40%;
+    top: 40%;
+  }
+  .drumstick-low-tom {
+    right: 40%;
+    top: 30%;
+    transform: scale(1.4) rotateZ(0deg);
+  }
+  .drumstick-ride {
+    right: 30%;
+    top: 30%;
+    transform: scale(1.4) rotateZ(30deg);
+  }
+  .drumstick-floor-tom {
+    right: 35%;
+    top: 50%;
+    transform: scale(1.4) rotateZ(10deg);
   }
 }
