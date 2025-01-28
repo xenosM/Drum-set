@@ -1,16 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DRUM KIT</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/drum.css" />
     <!-- JS -->
-     <script type="module" src="js/main.js" defer></script>
-    
-</head>
-<body>
-    
-</body>
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="header-title">DRUMMING SIMULATOR</h1>
+      <div id="volume-range-container">
+        <div id="volume-range-title">VOLUME</div>
+        <input id="volume-range" type="range" value="10" max="10" min="1" />
+        <span id="volume-indicator">100%</span>
+      </div>
+    </header>
+    <main id="tridiv">
+      <div
+        class="scene"
+        style="
+          -webkit-transform: rotateX(310deg) rotateY(310deg);
+          -moz-transform: rotateX(310deg) rotateY(310deg);
+          -ms-transform: rotateX(310deg) rotateY(310deg);
+          transform: rotateX(310deg) rotateY(310deg);
+        "
+      >
+        <div class="shape cylinder-1 high-tom">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+          <div class="face side s14"></div>
+          <div class="face side s15"></div>
+          <div class="face side s16"></div>
+          <div class="face side s17"></div>
+          <div class="face side s18"></div>
+          <div class="face side s19"></div>
+          <div class="face side s20"></div>
+          <div class="face side s21"></div>
+          <div class="face side s22"></div>
+          <div class="face side s23"></div>
+          <div class="face side s24"></div>
+          <div class="face side s25"></div>
+          <div class="face side s26"></div>
+          <div class="face side s27"></div>
+          <div class="face side s28"></div>
+          <div class="face side s29"></div>
+        </div>
+        <div class="shape cylinder-2 low-tom">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+          <div class="face side s14"></div>
+          <div class="face side s15"></div>
+          <div class="face side s16"></div>
+          <div class="face side s17"></div>
+          <div class="face side s18"></div>
+          <div class="face side s19"></div>
+          <div class="face side s20"></div>
+          <div class="face side s21"></div>
+          <div class="face side s22"></div>
+          <div class="face side s23"></div>
+          <div class="face side s24"></div>
+          <div class="face side s25"></div>
+          <div class="face side s26"></div>
+          <div class="face side s27"></div>
+          <div class="face side s28"></div>
+          <div class="face side s29"></div>
+          <div class="face side s30"></div>
+          <div class="face side s31"></div>
+          <div class="face side s32"></div>
+          <div class="face side s33"></div>
+          <div class="face side s34"></div>
+          <div class="face side s35"></div>
+          <div class="face side s36"></div>
+          <div class="face side s37"></div>
+          <div class="face side s38"></div>
+          <div class="face side s39"></div>
+          <div class="face side s40"></div>
+          <div class="face side s41"></div>
+          <div class="face side s42"></div>
+          <div class="face side s43"></div>
+          <div class="face side s44"></div>
+          <div class="face side s45"></div>
+          <div class="face side s46"></div>
+          <div class="face side s47"></div>
+          <div class="face side s48"></div>
+          <div class="face side s49"></div>
+        </div>
+        <div class="shape cylinder-3 bass">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+          <div class="face side s14"></div>
+          <div class="face side s15"></div>
+          <div class="face side s16"></div>
+          <div class="face side s17"></div>
+          <div class="face side s18"></div>
+          <div class="face side s19"></div>
+          <div class="face side s20"></div>
+          <div class="face side s21"></div>
+          <div class="face side s22"></div>
+          <div class="face side s23"></div>
+          <div class="face side s24"></div>
+          <div class="face side s25"></div>
+          <div class="face side s26"></div>
+          <div class="face side s27"></div>
+          <div class="face side s28"></div>
+          <div class="face side s29"></div>
+        </div>
+        <div class="shape cylinder-4 floor-tom">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+          <div class="face side s14"></div>
+          <div class="face side s15"></div>
+          <div class="face side s16"></div>
+          <div class="face side s17"></div>
+          <div class="face side s18"></div>
+          <div class="face side s19"></div>
+          <div class="face side s20"></div>
+          <div class="face side s21"></div>
+          <div class="face side s22"></div>
+          <div class="face side s23"></div>
+          <div class="face side s24"></div>
+          <div class="face side s25"></div>
+          <div class="face side s26"></div>
+          <div class="face side s27"></div>
+          <div class="face side s28"></div>
+          <div class="face side s29"></div>
+        </div>
+        <div class="shape cylinder-5 snare">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+          <div class="face side s14"></div>
+          <div class="face side s15"></div>
+          <div class="face side s16"></div>
+          <div class="face side s17"></div>
+          <div class="face side s18"></div>
+          <div class="face side s19"></div>
+          <div class="face side s20"></div>
+          <div class="face side s21"></div>
+          <div class="face side s22"></div>
+          <div class="face side s23"></div>
+          <div class="face side s24"></div>
+          <div class="face side s25"></div>
+          <div class="face side s26"></div>
+          <div class="face side s27"></div>
+          <div class="face side s28"></div>
+          <div class="face side s29"></div>
+        </div>
+        <div class="shape cylinder-6 crash">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+        <div class="shape cylinder-7 ride">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+        <div class="shape cylinder-8 hihat">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+        <div class="shape cylinder-9 stand-3">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+        </div>
+        <div class="shape cylinder-10 stand-1">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+        </div>
+        <div class="shape cylinder-11 stand-2">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+        </div>
+        <div class="shape cylinder-12 stand-4">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+        </div>
+        <div class="shape cylinder-13 stand-5">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+        </div>
+        <div class="shape cylinder-14 stand-6">
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+          <div class="face side s0"></div>
+          <div class="face side s1"></div>
+          <div class="face side s2"></div>
+          <div class="face side s3"></div>
+          <div class="face side s4"></div>
+          <div class="face side s5"></div>
+          <div class="face side s6"></div>
+          <div class="face side s7"></div>
+          <div class="face side s8"></div>
+          <div class="face side s9"></div>
+          <div class="face side s10"></div>
+          <div class="face side s11"></div>
+          <div class="face side s12"></div>
+          <div class="face side s13"></div>
+        </div>
+        <div class="shape cuboid-1 floor">
+          <div class="face ft"></div>
+          <div class="face bk"></div>
+          <div class="face rt"></div>
+          <div class="face lt"></div>
+          <div class="face bm"></div>
+          <div class="face tp"></div>
+        </div>
+      </div>
+      <div id="shortcuts-container">
+        <h2 id="shortcuts-title">SHORTCUTS</h2>
+        <ul id="shortcuts-list">
+          <li class="shortcuts">
+            BASS:<span>a</span>
+          </li>
+          <li class="shortcuts">
+            CRASH:<span>s</span>
+          </li>
+          <li class="shortcuts">
+            FLOOR TOM:<span>d</span>
+          </li>
+          <li class="shortcuts">
+            HIGH TOM:<span>f</span>
+          </li>
+          <li class="shortcuts">
+            HIHAT:<span>h</span>
+          </li>
+          <li class="shortcuts">
+            LOW TOM:<span>j</span>
+          </li>
+          <li class="shortcuts">
+            RIDE:<span>k</span>
+          </li>
+          <li class="shortcuts">
+            SNARE:<span>l</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,8 +1,90 @@
-*{
-    box-sizing: border-box;
-    font-family:tahoma ;
+* {
+  box-sizing: border-box;
+  font-family: tahoma;
 }
-body{
-    margin:0;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(112, 112, 134);
+}
+
+header #header-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin: 10px 0;
+}
+header #volume-range-container {
+  display: grid;
+  place-items: center;
+
+  #volume-range-title {
+    font-size: 1.25rem;
+    color: rgb(65, 255, 192);
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  #volume-range {
+    appearance: none;
+    border-radius: 5px;
+    height: 1rem;
+  }
+  #volume-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background-image: url("../images/enable-sound_9723958.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  #volume-range::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background-image: url("../images/enable-sound_9723958.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  #volume-indicator {
+    color: yellow;
+  }
+}
+#shortcuts-container {
+  user-select: none;
+  position: absolute;
+  bottom: 50px;
+  right: 120px;
+  background-color: rgba(40, 40, 40, 0.5);
+  padding:1rem;
+  border-radius: 5px;
+  #shortcuts-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin: 20px 0;
+  }
+  #shortcuts-list{
+    list-style: none;
     padding:0;
+    margin:0;
+  }
+  .shortcuts{
+    color:aliceblue;
+    margin-bottom: .75rem;
+
+  }
+  .shortcuts span{
+    float:right;
+    background-color: rgba(100,100,100,0.8);  
+    padding:2px 5px;
+    border-radius: 5px;
+
+  }
 }
