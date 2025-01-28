@@ -1,9 +1,6 @@
 import * as sound from "./sounds.js";
 import { playAudio, animateDrumstick } from "./utils.js";
 
-//*Vercel speed tester
-import { injectSpeedInsights } from "@vercel/speed-insights";
-injectSpeedInsights();
 
 //*VARIABLE DECLARATION
 //*DOM elements
