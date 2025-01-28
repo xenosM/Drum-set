@@ -1,0 +1,23 @@
+.hihat-drumstick-animation{
+    transform: scale(1) rotateZ(-40deg) !important;
+}
+.crash-drumstick-animation{
+    transform: scale(1) rotateZ(-40deg) !important;
+}
+.high-tom-drumstick-animation{
+    transform: scale(1) rotateX(-40deg) !important;
+}
+.snare-drumstick-animation{
+    transform: scale(1) rotateX(-40deg) !important;
+}
+.low-tom-drumstick-animation{
+    transform: scale(1) rotateX(-40deg) !important;
+}
+.ride-drumstick-animation{
+    transform: scale(1) rotateX(-40deg) !important;
+
+}
+.floor-tom-drumstick-animation{
+    transform: scale(1) rotateZ(40deg) !important;
+
+}

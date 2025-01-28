@@ -1,6 +1,6 @@
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
  #tridiv {
-  border:1px solid red;
+  /* border:1px solid red; */
   position: absolute;
   left:50%;
   transform: translateX(-50%);
