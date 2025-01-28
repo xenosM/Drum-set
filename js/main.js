@@ -2,7 +2,7 @@ import * as sound from "./sounds.js";
 import { playAudio, animateDrumstick } from "./utils.js";
 
 //*Vercel speed tester
-import { injectSpeedInsights } from "../node_modules/@vercel/speed-insights";
+import { injectSpeedInsights } from "../node_modules/@vercel/speed-insights/next";
 injectSpeedInsights();
 
 //*VARIABLE DECLARATION
